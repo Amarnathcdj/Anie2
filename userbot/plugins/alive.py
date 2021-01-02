@@ -14,31 +14,24 @@ from telethon import events
 from userbot.utils import admin_cmd, sudo_cmd
 from userbot import ALIVE_NAME
 from telethon.tl.types import ChannelParticipantsAdmins
-# 🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "DARK COBRA"
-
-# Thanks to Sipak bro and Raganork.. 
-# animation Idea by @NOOB_GUY_OP (Sipakisking)
-# Made by @hellboi_atul ....and thanks to @Crackexy for the logos...
-# Kang with credits else gay...
-# alive.py for DC(DARK COBRA)
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Aɳιҽ"
 global ghanti
 ghanti = borg.uid
 edit_time = 5
 """ =======================CONSTANTS====================== """
-file1 = "https://telegra.ph/file/6aa39732748ed7c319943.jpg"
-file2 = "https://telegra.ph/file/a6d72504bc09e71484a54.jpg"
-file3 = "https://telegra.ph/file/3cdbede1d5d85aa2d50fc.jpg"
-file4 = "https://telegra.ph/file/3dae01973943e8b28c931.jpg"
+file1 = "https://telegra.ph/file/74baa0fee2d1f3cc8112d.jpg"
+file2 = "https://telegra.ph/file/897db0c5f8f06134556f2.jpg"
+file3 = "https://telegra.ph/file/09c1cb99d4bd6f0b9cbad.jpg"
+file4 = "https://telegra.ph/file/9271370fd1f5dd877388b.jpg"
+file5 = "https://telegra.ph/file/6b5e21235cb7244560e1b.jpg"
 """ =======================CONSTANTS====================== """
-pm_caption = "** 𝙳𝙰𝚁𝙺 𝙲𝙾𝙱𝚁𝙰 𝙸𝚂 𝙾𝙽𝙻𝙸𝙽𝙴**\n\n"
-pm_caption += "**Yes Master, Am Alive And Systems Are Working Perfectly As It Should Be...**\n\n"
-pm_caption += "✘ About My System ✘\n\n"
-pm_caption += "➾ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ** ☞ 1.17.5\n"
-pm_caption += "➾ **ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ** ☞ [ᴊᴏɪɴ](https://t.me/Dark_cobra_support)\n"
-pm_caption += "➾ **ʟɪᴄᴇɴꜱᴇ**  ☞ [𝚃𝙴𝙰𝙼 𝙲𝙾𝙱𝚁𝙰](https://github.com/DARK-COBRA)\n"
-pm_caption += "➾ **ᴄᴏᴘʏʀɪɢʜᴛ ʙʏ** ☞ [𝙳𝙰𝚁𝙺-𝙲𝙾𝙱𝚁𝙰](https://github.com/DARK-COBRA/DARKCOBRA)\n\n"
-pm_caption += f"➾ **ᴍʏ ᴍᴀsᴛᴇʀ** ☞ [{DEFAULTUSER}](tg://user?id={ghanti})\n"
+pm_caption = "** 𝓐𝓷𝓲𝓮 𝓘𝓩 𝓸𝓷𝓵𝓲𝓷𝓮 **\n\n"
+pm_caption += "**𝓑𝓸𝓼𝓼 𝓘 𝓐𝓶 𝓕𝓲𝓷𝓮 𝓐𝓯**\n\n"
+pm_caption += "✘ 𝓐𝓫𝓸𝓾𝓽 𝓜𝔂 𝓢𝔂𝓼𝓽𝓮𝓶 ✘\n\n"
+pm_caption += "➾ **𝓣𝓮𝓵𝓮𝓽𝓱𝓸𝓷 𝓥𝓮𝓻𝓼𝓲𝓸𝓷** ☞ 1.17.5\n"
+pm_caption += "➾ **𝓛𝓲𝓬𝓮𝓷𝓼𝓮**  ☞ [Aɳιҽ2021](https://github.com/Amarnathcdj)\n"
+pm_caption += "➾ **𝓒𝓸𝓹𝔂𝓻𝓲𝓰𝓱𝓽 𝓑𝔂** ☞ [Aɳιҽ](https://github.com/Amarnathcdj/Anie)\n\n"
+pm_caption += f"➾ **𝓜𝔂 𝓜𝓪𝓼𝓽𝓮𝓻** ☞ [{DEFAULTUSER}](tg://user?id={ghanti})\n"
 
 @borg.on(admin_cmd(pattern=r"alive"))
 @borg.on(sudo_cmd(pattern=r"alive", allow_sudo=True))
@@ -57,13 +50,13 @@ async def hmm(yes):
     ok2 = await borg.edit_message(yes.chat_id, ok, file=file3)
 
     await asyncio.sleep(edit_time)
-    ok3 = await borg.edit_message(yes.chat_id, ok2, file=file1)
+    ok3 = await borg.edit_message(yes.chat_id, ok2, file=file5)
     
     await asyncio.sleep(edit_time)
     ok4 = await borg.edit_message(yes.chat_id, ok3, file=file3)
     
     await asyncio.sleep(edit_time)
-    ok5 = await borg.edit_message(yes.chat_id, ok4, file=file2)
+    ok5 = await borg.edit_message(yes.chat_id, ok4, file=file5)
     
     await asyncio.sleep(edit_time)
     ok6 = await borg.edit_message(yes.chat_id, ok5, file=file1)
