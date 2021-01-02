@@ -1,15 +1,13 @@
 """Take screenshot of any website
 Syntax: .screenshot <Website URL>"""
-
-
-
 import io
 import traceback
 from datetime import datetime
 from selenium import webdriver
 from telethon import events
 from userbot.utils import admin_cmd
-
+import asyncio
+from asyncio import wait
 
 @borg.on(admin_cmd(pattern="screenshot (.*)"))
 async def _(event):
@@ -63,3 +61,15 @@ async def _(event):
         await event.edit(f"Completed screencapture Process in {ms} seconds")
     except Exception:
         await event.edit(traceback.format_exc())
+        
+   
+
+
+@borg.on(admin_cmd("repeat ?(.*)"))
+async def _(event):
+    message = event.text[10:]
+    count = int(event.text[8:10])
+    repmessage = message * count
+    await wait([event.respond(repmessage)for i in range(count)])
+    await event.delete()
+
