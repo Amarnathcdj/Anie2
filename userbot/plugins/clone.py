@@ -81,7 +81,7 @@ async def _(event):
       reply_to=reply_message
       )
     if BOTLOG:
-        await event.client.send_message(BOTLOG_CHATID, f"#CLONED\nSuccesfulley cloned [{first_name}](tg://user?id={user_id })")
+        await event.client.send_message(BOTLOG_CHATID, f"#CLONED\nWho Iz U [{first_name}](tg://user?id={user_id })")
     
 @borg.on(admin_cmd(pattern="revert$"))
 async def _(event):
@@ -97,7 +97,7 @@ async def _(event):
     await borg(functions.account.UpdateProfileRequest(last_name=f"{lname}"))
     event.edit("succesfully reverted to your account back")
     if BOTLOG:
-        await event.client.send_message(BOTLOG_CHATID, f"#REVERT\nSuccesfully reverted back to your profile")
+        await event.client.send_message(BOTLOG_CHATID, f"#REVERT\nReveted SucessFumlly")
     
     
     
