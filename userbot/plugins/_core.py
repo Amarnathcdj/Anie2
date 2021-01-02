@@ -37,12 +37,12 @@ async def send(event):
         time_taken_in_ms = (end - start).seconds
         await eor(
             pro,
-            f"**==> Plugin name:** `{input_str}`\n**==> Uploaded in {time_taken_in_ms} seconds only.**\n**==> Uploaded by:** [{DEFAULTUSER}](tg://user?id={hmm})\n",
+            f"**==> Plugin name:** `{input_str}`\n**==> Uploaded in {time_taken_in_ms} seconds only.**\n**==> Here It iZ Master** [{DEFAULTUSER}](tg://user?id={hmm})\n",
         )
         await asyncio.sleep(DELETE_TIMEOUT)
         await event.edit("__sent!!__") #only italic if loaded markdown else it doesn't look gr8
     else:
-        await eor(event, "**404**: __File Not Found__")
+        await eor(event, "**404**:File Not Found")
 
 
 @bot.on(admin_cmd(pattern="install"))
@@ -64,7 +64,7 @@ async def install(event):
                 load_module(shortname.replace(".py", ""))
                 await eor(
                     event,
-                    "Plugin successfully installed\n `{}`".format(
+                    "Installed.... Ab Enjoy Kro\n `{}`".format(
                         os.path.basename(downloaded_file_name)
                     ),
                 )
@@ -72,7 +72,7 @@ async def install(event):
                 os.remove(downloaded_file_name)
                 await eor(
                     event,
-                    "**Error!**\nPlugin cannot be installed!\n Or may have been pre-installed.",
+                    "**Error!**\nCannot Install!\n Or may have been pre-installed.",
                 )
         except Exception as e:  # pylint:disable=C0103,W0703
             await eor(event, str(e))
@@ -92,7 +92,7 @@ async def unload(event):
         qwe = await eor(event, f"DarkCobra Has Successfully unloaded {shortname}")
     except Exception as e:
         await qwe.edit(
-            "Darkcobra has Successfully unloaded {shortname}\n{}".format(shortname, str(e))
+            "Aɳιҽ has Successfully unloaded {shortname}\n{}".format(shortname, str(e))
         )
 
 
@@ -111,5 +111,5 @@ async def load(event):
         qwe = await eor(event, f"Successfully loaded {shortname}")
     except Exception as e:
         await qwe.edit(
-            f"DarkCobra could not load {shortname} because of the following error.\n{str(e)}"
+            f"Aɳιҽ could not load {shortname} because of the following error.\n{str(e)}"
         )
