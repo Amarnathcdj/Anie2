@@ -42,26 +42,26 @@ async def payf(event):
     pay = "{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}".format(paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1,paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1,paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1,paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1,paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1,paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1,paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1,paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1,paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1,paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1, paytext*1)
     await event.edit(pay)
 
-@borg.on(admin_cmd(pattern="uff ?(.*)"))      
+@borg.on(admin_cmd(pattern="gay ?(.*)"))      
 async def _(event):
     if event.fwd_from:
         return
     animation_interval = 0.1   
     animation_ttl = range(0, 13)    
     animation_chars = [
+            "G",
+            "GE",    
+            "GEY",
+            "GEY I",
+            "GEY IZ",
+            "GEY IZ U",
             "U",
-            "Uf",    
-            "Uff",
-            "Ufffff",
-            "Uffffff",
-            "Ufffffff",
-            "Uffffffff",
-            "Ufffffffff",
-            "Uffffffffff",    
-            "Ufffffffffff",
-            "Uffffffffffff",
-            "Ufffffffffffff",
-            "Uffffffffffffff"
+            "U I",
+            "U IZ",    
+            "U IZ G",
+            "U IZ GE",
+            "U IZ GEY",
+            "GEY SPOTTED"
         ]
     for i in animation_ttl:        	
         await asyncio.sleep(animation_interval)
@@ -726,20 +726,20 @@ async def _(event):
 async def _(event):
     if event.fwd_from:
         retun
-    await event.edit("✈-------------")
-    await event.edit("-✈------------")
-    await event.edit("--✈-----------")
-    await event.edit("---✈----------")
-    await event.edit("----✈---------")
-    await event.edit("-----✈--------")
-    await event.edit("------✈-------")
-    await event.edit("-------✈------")
-    await event.edit("--------✈-----") 
-    await event.edit("---------✈----")
-    await event.edit("----------✈---")
-    await event.edit("-----------✈--")
-    await event.edit("------------✈-")
-    await event.edit("-------------✈")
+    await event.edit("✈             ")
+    await event.edit(" ✈            ")
+    await event.edit("  ✈           ")
+    await event.edit("   ✈          ")
+    await event.edit("    ✈         ")
+    await event.edit("     ✈        ")
+    await event.edit("      ✈       ")
+    await event.edit("       ✈      ")
+    await event.edit("        ✈     ") 
+    await event.edit("         ✈    ")
+    await event.edit("          ✈   ")
+    await event.edit("           ✈  ")
+    await event.edit("            ✈ ")
+    await event.edit("             ✈")
     await asyncio.sleep(3)
     await event.delete()           
     
@@ -798,7 +798,7 @@ async def _(event):
             "`▁ ▂ ▄ ▅ ▆ ▒ ▒`",
             "`▁ ▂ ▄ ▅ ▆ ▇ ▒`",
             "`▁ ▂ ▄ ▅ ▆ ▇ █`",
-            "**JIO NETWORK Boosted Successfully....**"
+            "**Todays 1.5GB iz over Try Again tommorow**"
  ]
     for i in animation_ttl:
             await asyncio.sleep(animation_interval)
