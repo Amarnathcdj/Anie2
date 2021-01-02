@@ -28,9 +28,9 @@ from userbot.utils import admin_cmd
 
 # =================== CONSTANT ===================
 PP_TOO_SMOL = "`The image is too small`"
-PP_ERROR = "`Failure while processing the image`"
-NO_ADMIN = "`I am not an admin nub nibba!`"
-NO_PERM = "`I don't have sufficient permissions! This is so sed. Alexa play Tera Baap Aaya`"
+PP_ERROR = "`Failure while processing the image,Sed`"
+NO_ADMIN = "`ME Iz Not ADmeme🐙`"
+NO_PERM = "`I don't have sufficient permissions! This is so sed. Alexa play Gemd MRa`"
 NO_SQL = "`Running on Non-SQL mode!`"
 
 CHAT_PP_CHANGED = "`Chat Picture Changed`"
@@ -133,7 +133,7 @@ async def promote(promt):
     await promt.edit("`Promoting...`")
     user, rank = await get_user_from_event(promt)
     if not rank:
-        rank = "DARK COBRA"  # Just in case.
+        rank = "ąժʍìղ"  # Just in case.
     if user:
         pass
     else:
@@ -143,7 +143,7 @@ async def promote(promt):
     try:
         await promt.client(
             EditAdminRequest(promt.chat_id, user.id, new_rights, rank))
-        await promt.edit("`Promoted Successfully! Now gib Party 🥳`")
+        await promt.edit("`Party De Bencho Permote Hogya 🥳`")
 
     # If Telethon spit BadRequestError, assume
     # we don't have Promote permission
@@ -174,7 +174,7 @@ async def demote(dmod):
         return
 
     # If passing, declare that we're going to demote
-    await dmod.edit("`Demoting...`")
+    await dmod.edit("`Demuteting.....`")
     rank = "admeme"  # dummy rank, lol.
     user = await get_user_from_event(dmod)
     user = user[0]
@@ -200,7 +200,7 @@ async def demote(dmod):
     except BadRequestError:
         await dmod.edit(NO_PERM)
         return
-    await dmod.edit("`Demoted this retard Successfully!`")
+    await dmod.edit("`GaMdu Amenme removed`")
 
     # Announce to the logging group if we have demoted successfully
     if BOTLOG:
@@ -232,7 +232,7 @@ async def ban(bon):
         return
 
     # Announce that we're going to whack the pest
-    await bon.edit("`Whacking the pest!`")
+    await bon.edit("`Nikal Lwde😂😂`")
 
     try:
         await bon.client(EditBannedRequest(bon.chat_id, user.id,
@@ -247,13 +247,13 @@ async def ban(bon):
             await reply.delete()
     except BadRequestError:
         await bon.edit(
-            "`I dont have message nuking rights! But still he was banned!`")
+            "`Rights Kon Dega Be?😂`")
         return
     # Delete message and then tell that the command
     # is done gracefully
     # Shout out the ID, so that fedadmins can fban later
     if reason:
-        await bon.edit(f"Loser `{str(user.id)}` was banned !!\nReason: {reason}")
+        await bon.edit(f"Loser `{str(user.id)}` was benned !!\nReason: {reason}")
     else:
         await bon.edit(f"Bitch `{str(user.id)}` was banned !!")
     # Announce to the logging group if we have banned the person
@@ -293,7 +293,7 @@ async def nothanos(unbon):
     try:
         await unbon.client(
             EditBannedRequest(unbon.chat_id, user.id, UNBAN_RIGHTS))
-        await unbon.edit("```Unbanned Successfully. Granting another chance.```")
+        await unbon.edit("```Unbanned Successfully. Ab Dimag Mt Kha.```")
 
         if BOTLOG:
             await unbon.client.send_message(
@@ -389,7 +389,7 @@ async def unmoot(unmot):
         return
 
     # If admin or creator, inform the user and start unmuting
-    await unmot.edit('```Unmuting...```')
+    await unmot.edit('```Unmuting.😂..```')
     user = await get_user_from_event(unmot)
     user = user[0]
     if user:
@@ -478,7 +478,7 @@ async def ungmoot(un_gmute):
         return
 
     # If pass, inform and start ungmuting
-    await un_gmute.edit('```Ungmuting...```')
+    await un_gmute.edit('```Globally Unmuting Omk```')
 
     if ungmute(user.id) is False:
         await un_gmute.edit("`Error! User probably not gmuted.`")
@@ -528,7 +528,7 @@ async def gspider(gspdr):
             '`Error! User probably already gmuted.\nRe-rolls the tape.`')
     else:
         if reason:
-            await gspdr.edit(f"`Globally taped!`Reason: {reason}")
+            await gspdr.edit(f"`Globally muthed!`Reason: {reason}")
         else:
             await gspdr.edit("`Globally taped!`")
 
@@ -693,7 +693,7 @@ async def kick(usr):
         await usr.edit("`Couldn't fetch user.`")
         return
 
-    await usr.edit("`Kicking...`")
+    await usr.edit("`Ab Tu Ja Ider Se`")
 
     try:
         await usr.client.kick_participant(usr.chat_id, user.id)
