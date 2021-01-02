@@ -18,9 +18,9 @@ IS_SELECTED_DIFFERENT_BRANCH = (
     "please check out to an official branch, and re-start the updater."
 )
 OFFICIAL_UPSTREAM_REPO = "https://github.com/Amarnathcdj/Anie"
-BOT_IS_UP_TO_DATE = "❂your BOT is up-to-date!❂"
+BOT_IS_UP_TO_DATE = "⚡your BOT is up-to-date Master⚡"
 NEW_BOT_UP_DATE_FOUND = (
-    "**LEGEND BOT  Update Found For** {branch_name}\n"
+    "**Update Found For Anie** {branch_name}\n"
     "\n\n{changelog}\n"
     "Pulling Updates !!"
 )
