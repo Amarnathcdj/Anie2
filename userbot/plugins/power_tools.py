@@ -17,11 +17,11 @@ from uniborg.util import admin_cmd
 async def _(event):
     await event.edit("Restarting ▰▱▱▱▱▱▱▱18%...")
     await asyncio.sleep(1)
-    await event.edit("Restarting ▰▰▰▰▱▱▱▱49.6%...")
+    await event.edit("Restarting ▰▰▰▰▱▱▱▱48.6%...")
     await asyncio.sleep(1.5)
     await event.edit("Restarting ▰▰▰▰▰▰▰▰100%...")
     await asyncio.sleep(3)
-    await event.edit("Restarted boss....✈ `.king` me or type `.help` or type '.awake' or type '.allive' to check if your DC is online/alive ")
+    await event.edit("Restarted Master😘,Check Me By typing .king")
     await borg.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
     # You probably don't need it but whatever
@@ -32,7 +32,7 @@ async def _(event):
 async def _(event):
     if event.fwd_from:
         return
-    await event.edit("Turning dyno off ...Manually turn me on later")
+    await event.edit("Turning dyno off .....Turn Me On Manually")
     await borg.disconnect()
 
 @borg.on(events.NewMessage(pattern=r"\.reboot", outgoing=True))
@@ -40,11 +40,11 @@ async def _(event):
     if event.fwd_from:
         return
     
-    await event.edit("╭━━━╮\n┃╭━╮┃\n┃╰━━┳━━┳━┳╮╭┳━━┳━╮\n╰━━╮┃┃━┫╭┫╰╯┃┃━┫╭╯\n┃╰━╯┃┃━┫┃╰╮╭┫┃━┫┃\n╰━━━┻━━┻╯╱╰╯╰━━┻╯\n╭━━━╮╱╱╱╱╱╭╮╱╱╱╱╱╭╮\n┃╭━╮┃╱╱╱╱╭╯╰╮╱╱╱╭╯╰╮\n┃╰━╯┣━━┳━┻╮╭╋━━┳┻╮╭╋┳━╮╭━━╮\n┃╭╮╭┫┃━┫━━┫┃┃╭╮┃╭┫┃┣┫╭╮┫╭╮┃\n┃┃┃╰┫┃━╋━━┃╰┫╭╮┃┃┃╰┫┃┃┃┃╰╯┣┳┳╮\n╰╯╰━┻━━┻━━┻━┻╯╰┻╯╰━┻┻╯╰┻━╮┣┻┻╯\n╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╭━╯┃\n╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╰━━╯")
+    await event.edit("executing endtask>>svchost.exe,dktwmr.exe")
     await asyncio.sleep(2)
-    await event.edit("╭━━━╮\n┃╭━╮┃\n┃╰━━┳━━┳━┳╮╭┳━━┳━╮\n╰━━╮┃┃━┫╭┫╰╯┃┃━┫╭╯\n┃╰━╯┃┃━┫┃╰╮╭┫┃━┫┃\n╰━━━┻━━┻╯╱╰╯╰━━┻╯\n╭━━━╮╱╱╱╱╱╭╮╱╱╱╱╱╭╮╱╱╱╱╱╭╮\n┃╭━╮┃╱╱╱╱╭╯╰╮╱╱╱╭╯╰╮╱╱╱╱┃┃\n┃╰━╯┣━━┳━┻╮╭╋━━┳┻╮╭╋━━┳━╯┃\n┃╭╮╭┫┃━┫━━┫┃┃╭╮┃╭┫┃┃┃━┫╭╮┃j\n┃┃┃╰┫┃━╋━━┃╰┫╭╮┃┃┃╰┫┃━┫╰╯┣╮\n╰╯╰━┻━━┻━━┻━┻╯╰┻╯╰━┻━━┻━━┻╯")
+    await event.edit("executing start>>ntoskernel.exe")
     await asyncio.sleep(0.1)
-    await event.edit("🇸 🇪 🇷 🇻 🇪 🇷  🇷 🇪 🇧 🇴 🇴 🇹 🇪 🇩  = ✅")
+    await event.edit("Omk Reboooted..😗😗 = ✅")
     await borg.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
