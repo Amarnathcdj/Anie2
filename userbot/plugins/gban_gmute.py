@@ -41,7 +41,7 @@ async def get_full_user(event):
         try:
             user_obj = await event.client.get_entity(user)
         except Exception as err:
-            return await event.edit("Error... Please report at @Dark_cobra_support_group", str(err))           
+            return await event.edit("Error...🤤", str(err))           
     return user_obj, extra
 
 
@@ -55,13 +55,13 @@ async def get_user_from_id(user, event):
         return None
     return user_obj
 
-@borg.on(admin_cmd(pattern="gben ?(.*)"))
+@borg.on(admin_cmd(pattern="gban ?(.*)"))
 async def gben(userbot):
     dc = userbot
     sender = await dc.get_sender()
     me = await dc.client.get_me()
     if not sender.id == me.id:
-        dark = await dc.reply("Gbanning This User !")
+        dark = await dc.reply("Gbanning This Gey... !")
     else:
         dark = await dc.edit("Wait Processing.....")
     me = await userbot.client.get_me()
@@ -83,9 +83,9 @@ async def gben(userbot):
         if not reason:
             reason = "Private"
     except:
-        return await dark.edit(f"**Something W3NT Wrong 🤔**")
+        return await dark.edit(f"**Something W3NT Wrong 😐**")
     if user:
-        if user.id == 1289422521:
+        if user.id == 1221693726:
             return await dark.edit(
                 f"**You nub nibba..I can't gben my creator..**"
             )
@@ -106,7 +106,7 @@ async def gben(userbot):
             try:
                 await userbot.client.edit_permissions(i, user, view_messages=False)
                 a += 1
-                await dark.edit(f"**Globally banned 🙄🙄 Total Affected Chats **: `{a}`")
+                await dark.edit(f"**Globally banned 😂😂 Total Affected Chats **: `{a}`")
             except:
                 b += 1
     else:
@@ -121,7 +121,7 @@ async def gben(userbot):
     )
 
 
-@borg.on(admin_cmd(pattern="ungben ?(.*)"))
+@borg.on(admin_cmd(pattern="ungban ?(.*)"))
 async def gunben(userbot):
     dc = userbot
     sender = await dc.get_sender()
@@ -149,9 +149,9 @@ async def gunben(userbot):
         if not reason:
             reason = "Private"
     except:
-        return await dark.edit("Someting Went Wrong 🤔")
+        return await dark.edit("Someting Went Wrong 😐")
     if user:
-        if user.id == 1289422521:
+        if user.id == 1221693726:
             return await dark.edit("**You nub nibba..can't gban or ungban my creator... !**")
         try:
             from userbot.modules.sql_helper.gmute_sql import ungmute
