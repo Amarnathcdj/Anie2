@@ -18,9 +18,9 @@ IS_SELECTED_DIFFERENT_BRANCH = (
     "please check out to an official branch, and re-start the updater."
 )
 OFFICIAL_UPSTREAM_REPO = "https://github.com/Amarnathcdj/Anie"
-BOT_IS_UP_TO_DATE = "⚡your BOT is up-to-date Master⚡"
+BOT_IS_UP_TO_DATE = "Anie Is UptoDate🙂🙂"
 NEW_BOT_UP_DATE_FOUND = (
-    "**Update Found For Anie** {branch_name}\n"
+    "❄️❄️Update Found For Anie❄️❄️ {branch_name}\n"
     "\n\n{changelog}\n"
     "Pulling Updates !!"
 )
@@ -74,7 +74,7 @@ async def updater(message):
     )
 
     if not changelog:
-        await message.edit("**﹁﹁Updating your BOT** \n**Version** : `2.0` \n**Telethon** : `1.15.0` \n**Status** : `«Pulling Updates»` \n『**Thank You For Using LegendBOT !**』")
+        await message.edit("✨✨Updating Anie Ub✨✨\n🔥Pulling Updates🔥\nUpdating...🎉")
         await asyncio.sleep(5)
  
     message_one = NEW_BOT_UP_DATE_FOUND.format(
@@ -142,11 +142,11 @@ def generate_change_log(git_repo, diff_marker):
 
 async def deploy_start(bot, message, refspec, remote):
     await message.edit(RESTARTING_APP)
-    await message.edit("**✇✇Updating your BOTt✇✇** \n**Version** : `2.0` \n**Telethon** : `1.15.0` \n**Branch** : `✇Master✇` \n**Status** : `✇Updating & Restarting` \n__You Can Do__ `.alive` __To Check If I am Alive !__✇")
+    await message.edit("Updating αηïε")
     remote.push(refspec=refspec)
     await bot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 CMD_HELP.update({
-    "Updater":"this is only updater made by @legendx22 use .update"})
+    "Updater":"use .update to Update Ur Bot🎉"})
 
