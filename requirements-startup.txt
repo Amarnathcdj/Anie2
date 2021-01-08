@@ -95,7 +95,6 @@ google-auth-httplib2
 google-auth-oauthlib
 googletrans==3.1.0a0
 gsearch
-gtts
 hachoir
 heroku3
 html-telegraph-poster
