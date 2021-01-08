@@ -91,7 +91,6 @@ pytuneteller
 regex
 selenium
 spamwatch
-speedtest-cli
 vcsi
 wand
 youtube_dl > 2020.11.12
