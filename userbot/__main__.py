@@ -12,7 +12,6 @@ from var import Var
 LOAD_USERBOT = os.environ.get("LOAD_USERBOT", True)
 LOAD_ASSISTANT = os.environ.get("LOAD_ASSISTANT", True)    
 
-async def addimport glob
 from pathlib import Path
 from sys import argv
 
