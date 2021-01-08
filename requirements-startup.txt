@@ -24,7 +24,6 @@ gTTS>=2.0.1
 gitpython
 glitch_this
 google-api-python-client==1.8.0
-google-auth-oauthlib
 google_images_download>=2.8.0
 googletrans==3.1.0a0
 geopy
@@ -44,8 +43,6 @@ psycopg2
 psutil
 psycopg2-binary
 pygame
-PyLyrics
-pySmartDL
 pybase64>=0.4.0
 pyfiglet
 pylast
@@ -94,7 +91,6 @@ fonttools
 geopy
 gitpython
 glitch_this
-google-api-python-client
 google-auth-httplib2
 google-auth-oauthlib
 googletrans==3.1.0a0
@@ -115,12 +111,9 @@ patool
 Pillow
 prettytable
 programmingquotes
-psutil
 psycopg2
 PyDictionary
-pyfiglet
 PyGithub
-pylast
 PyLyrics
 pymediainfo
 pySmartDL
@@ -130,7 +123,6 @@ pytz
 qrcode
 regex
 requests
-search-engine-parser
 selenium
 spamwatch
 speedtest-cli
