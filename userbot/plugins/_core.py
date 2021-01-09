@@ -37,12 +37,12 @@ async def send(event):
         time_taken_in_ms = (end - start).seconds
         await eor(
             pro,
-            f"**==> Plugin name:** `{input_str}`\n**==> Uploaded in {time_taken_in_ms} seconds only.**\n**==>Enjoy..** [Amarnath Cdj](tg://user?id={hmm})\n",
+            f"**==> Plugin name:** `{input_str}`\n**==> Uploaded in {time_taken_in_ms} seconds only.**\n**==>Enjoy..😘** [Amarnath Cdj](tg://user?id={hmm})\n",
         )
         await asyncio.sleep(DELETE_TIMEOUT)
         await event.edit("__sent!!__") #only italic if loaded markdown else it doesn't look gr8
     else:
-        await eor(event, "Bochlike:File Not Found")
+        await eor(event, "Ekdm Bochlaik😑, File Not Found😆")
 
 
 @bot.on(admin_cmd(pattern="install"))
@@ -64,7 +64,7 @@ async def install(event):
                 load_module(shortname.replace(".py", ""))
                 await eor(
                     event,
-                    "Installed.... Ab Full Masti\n `{}`".format(
+                    "Installed.... Ab Full Masti💥\n `{}`".format(
                         os.path.basename(downloaded_file_name)
                     ),
                 )
