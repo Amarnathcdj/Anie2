@@ -46,7 +46,7 @@ async def _(event):
         if event.reply_to_msg_id:
             message_id = event.reply_to_msg_id
         with io.BytesIO(im_png) as out_file:
-            out_file.name = "DARK COBRA.ScreenCapture.PNG"
+            out_file.name = "αηïε_ScreenCapture.PNG"
             await borg.send_file(
                 event.chat_id,
                 out_file,
@@ -58,7 +58,7 @@ async def _(event):
             )
         end = datetime.now()
         ms = (end - start).seconds
-        await event.edit(f"Completed screencapture Process in {ms} seconds")
+        await event.edit(f"Completed screencapture in {ms} seconds")
     except Exception:
         await event.edit(traceback.format_exc())
         
