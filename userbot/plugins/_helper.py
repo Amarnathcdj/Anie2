@@ -38,16 +38,16 @@ async def cmd_list(event):
                 await event.edit(string)
         elif input_str:
             if input_str in CMD_LIST:
-                string = "Commands found in {}:\n".format(input_str)
+                string = "Cmds Found in {}:\n".format(input_str)
                 for i in CMD_LIST[input_str]:
                     string += "  " + i
                     string += "\n"
                 await event.edit(string)
             else:
-                await event.edit(input_str + " is not a valid plugin!")
+                await event.edit(input_str + " is not a valid Cmd😐")
         else:
-            help_string = f"""Userbot Helper.. Provided by ✨AmarnathCdj✨ \n
-`Userbot Helper Shows all the Cmds`\n_Do help cmd Name To Know More"""
+            help_string = f"""Userbot Helper.. Provided by ☠️AmarnathCdj☠️ \n
+`All Cmds Here`\nDo .help cmd to know more😘"""
             results = await bot.inline_query(  # pylint:disable=E0602
                 tgbotusername,
                 help_string
@@ -59,7 +59,7 @@ async def cmd_list(event):
             )
             await event.delete()
             
-@borg.on(admin_cmd(pattern="dc"))  # pylint:disable=E0602
+@borg.on(admin_cmd(pattern="anie"))  # pylint:disable=E0602
 async def _(event):
     if event.fwd_from:
         return
@@ -74,7 +74,7 @@ async def _(event):
     result = await borg(functions.help.GetConfigRequest())  # pylint:disable=E0602
     result = result.stringify()
     logger.info(result)  # pylint:disable=E0602
-    await event.edit("Telethon UserBot powered byAɳιҽ")
+    await event.edit("Telethon Ub powered by Aɳιҽ")
 
 
 @borg.on(admin_cmd(pattern="syntax (.*)"))
@@ -85,7 +85,7 @@ async def _(event):
 
     if plugin_name in CMD_LIST:
         help_string = CMD_LIST[plugin_name].__doc__
-        unload_string = f"Use `.unload {plugin_name}` to remove this plugin.\n           © ᎯℕᏐ℮"
+        unload_string = f"Use `.unload {plugin_name}` to unload it.\n           © αηïε"
         
         if help_string:
             plugin_syntax = f"Syntax for plugin **{plugin_name}**:\n\n{help_string}\n{unload_string}"
