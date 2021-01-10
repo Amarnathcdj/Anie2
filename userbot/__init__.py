@@ -130,7 +130,7 @@ if bool(ENV):
     # Upstream Repo
     UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/DARK-COBRA/DARKCOBRA.git")
+    "https://github.com/Amarnathcdj/Anie.git")
 
     # Last.fm Module
     BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -271,7 +271,7 @@ if bool(ENV):
     ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
     AUTONAME = os.environ.get("AUTONAME", None)
     UPSTREAM_REPO_URL = os.environ.get(
-        "UPSTREAM_REPO_URL", "https://github.com/PerU-MoNsteR/Eliza.git"
+        "UPSTREAM_REPO_URL", "https://github.com/Amarnathcdj/Anie.git"
     )
     # Last.fm Module
     BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
