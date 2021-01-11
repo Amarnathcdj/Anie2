@@ -83,11 +83,11 @@ async def upstream(ups):
     changelog = await gen_chlog(repo, f'HEAD..upstream/{ac_br}')
     if not changelog and not force_update:
         await ups.edit(
-            f'\n**Master Anie Is Already Up-to-date with {ac_br} Branch*\n')
+            f'\n**Master Anie Is Already Up-to-date with {ac_br} Branch😘*\n')
         repo.__del__()
         return
     if conf != "now" and not force_update:
-        changelog_str = f'Uodate Found For[{ac_br}]:\n\nCHANGELOG:**\n`{changelog}`'
+        changelog_str = f'Update Found For[{ac_br}]🙁🙁:\n\nCHANGELOG:**\n`{changelog}`'
         if len(changelog_str) > 4096:
             await ups.edit("`Changelog is too big, view the file to see it.`")
             file = open("output.txt", "w+")
@@ -101,12 +101,12 @@ async def upstream(ups):
             remove("output.txt")
         else:
             await ups.edit(changelog_str)
-        await ups.respond("Type .updatenow To Continue")
+        await ups.respond("Type .updatenow To Continue🤭")
         return
     if force_update:
         await ups.edit('Force Updating.....')
     else:
-        await ups.edit('`Updating userbot, please wait....you arey best boss🤗😇')
+        await ups.edit('`Updating userbot, please wait....kro🤭🤭')
     if HEROKU_API_KEY is not None:
         import heroku3
         heroku = heroku3.from_key(HEROKU_API_KEY)
@@ -135,17 +135,17 @@ async def upstream(ups):
             remote.set_url(heroku_git_url)
         else:
             remote = repo.create_remote("heroku", heroku_git_url)
-            await ups.edit("`A \nN \nI \nE`")
+            await ups.edit("`💥💥💥A💥 \n💥💥N💥💥 \n💥I💥💥💥 \nE💥💥💥💥`")
             await asyncio.sleep(1)
-            await ups.edit("`N \nI \nE \nA`")
+            await ups.edit("`💥💥💥N💥 \n💥💥I💥💥 \n💥E💥💥💥 \nA💥💥💥💥`")
             await asyncio.sleep(1)
-            await ups.edit("`I \nE \nA \nN`")
+            await ups.edit("`💥💥💥I💥 \n💥💥E💥💥 \n💥A💥💥💥 \nN💥💥💥💥`")
             await asyncio.sleep(1)
-            await ups.edit("`E \nA \nN \nI`")
+            await ups.edit("`💥💥💥E💥 \n💥💥A💥💥 \n💥N💥💥💥 \nI💥💥💥💥`")
             await asyncio.sleep(1)
-            await ups.edit("`A \nN \nI \nE`")
+            await ups.edit("`💥💥💥A💥 \n💥💥N💥💥 \n💥I💥💥💥 \nE💥💥💥💥`")
             await asyncio.sleep(1)
-        await ups.edit("`⚜️Updating Anje⚜️\n\nPloxx Weit!\n\nWeit 5 Mins😁\nThen try .alive to check` 😎\n")
+        await ups.edit("`⚡Updating Anie⚡\n\nPloxx Weit!😗\n\nWeit 5 Mins🤭🙁🤭💥\nThen try .alive to check` ☠️😗\n")
         remote.push(refspec="HEAD:refs/heads/master", force=True)
     else:
         try:
