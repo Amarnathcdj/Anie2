@@ -37,7 +37,7 @@ RESTARTING_APP = "Re-Starting heroku application"
 # -- Constants End -- #
 
 
-#@command(pattern="^.update", outgoing=True)
+#@command(pattern="^.upp", outgoing=True)
 @borg.on(admin_cmd(pattern=r"update"))
 async def updater(message):
     try:
