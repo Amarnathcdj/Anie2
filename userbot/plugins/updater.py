@@ -1,7 +1,4 @@
-#"""Update UserBot Code (FOR DARKCOBRA USERBOT)
-#Syntax: .update
-#\nAll Credits goes to © @hellboi_atul
-#\nFor this awasome plugin.\nPorted from PpaperPlane Extended"""
+#Made By @RoseloverX for Anie Ub
 from telethon import events
 from os import remove, execle, path, makedirs, getenv, environ, execl
 from shutil import rmtree
@@ -42,11 +39,11 @@ async def update_requirements():
 async def upstream(ups):
     "For .update command, check if the bot is up to date, update if specified"
     conf = ups.pattern_match.group(1)
-    await ups.edit("Checking for updates, please wait....")
+    await ups.edit("Checking For Updates...")
     off_repo = UPSTREAM_REPO_URL
     force_update = False
     try:
-        txt = "Oops.. Updater cannot continue due to "
+        txt = "Error Vro..."
         txt += "some problems occured`\n\n**LOGTRACE:**\n"
         repo = Repo()
     except NoSuchPathError as error:
@@ -59,7 +56,7 @@ async def upstream(ups):
         return
     except InvalidGitRepositoryError as error:
         if conf != "now":
-            await ups.edit(f"**Hey ßoss!!!**😁😁\n__To get the Latest update of__ \n©DARK_COBRA_SUPPORT\n\n do |`.update now`| 😎😎 ")
+            await ups.edit(f"type .updatenow To Update Anie")
             return
         repo = Repo.init()
         origin = repo.create_remote('upstream', off_repo)
@@ -86,11 +83,11 @@ async def upstream(ups):
     changelog = await gen_chlog(repo, f'HEAD..upstream/{ac_br}')
     if not changelog and not force_update:
         await ups.edit(
-            f'\n**{ac_br} master your bot is already up to date..**\n')
+            f'\n**Master Anie Is Already Up-to-date with {ac_br} Branch*\n')
         repo.__del__()
         return
     if conf != "now" and not force_update:
-        changelog_str = f'**New UPDATE available for [{ac_br}]:\n\nCHANGELOG:**\n`{changelog}`'
+        changelog_str = f'Uodate Found For[{ac_br}]:\n\nCHANGELOG:**\n`{changelog}`'
         if len(changelog_str) > 4096:
             await ups.edit("`Changelog is too big, view the file to see it.`")
             file = open("output.txt", "w+")
@@ -104,10 +101,10 @@ async def upstream(ups):
             remove("output.txt")
         else:
             await ups.edit(changelog_str)
-        await ups.respond("do `.update now` to update")
+        await ups.respond("Type .updatenow To Continue")
         return
     if force_update:
-        await ups.edit('Force-Syncing to latest stable userbot code, please wait master...😅😅')
+        await ups.edit('Force Updating.....')
     else:
         await ups.edit('`Updating userbot, please wait....you arey best boss🤗😇')
     if HEROKU_API_KEY is not None:
@@ -138,17 +135,17 @@ async def upstream(ups):
             remote.set_url(heroku_git_url)
         else:
             remote = repo.create_remote("heroku", heroku_git_url)
-            await ups.edit("`⬛⬛⬛⬛ \n⬛✳️✳️⬛ \n⬛✳️✳️⬛ \n⬛⬛⬛⬛`")
+            await ups.edit("`A \nN \nI \nE`")
             await asyncio.sleep(1)
-            await ups.edit("`⬛⬛⬛⬛ \n⬛🔴🔴⬛ \n⬛🔴🔴⬛ \n⬛⬛⬛⬛`")
+            await ups.edit("`N \nI \nE \nA`")
             await asyncio.sleep(1)
-            await ups.edit("`⬛⬛⬛⬛ \n⬛🌕🌕⬛ \n⬛🌕🌕⬛ \n⬛⬛⬛⬛`")
+            await ups.edit("`I \nE \nA \nN`")
             await asyncio.sleep(1)
-            await ups.edit("`⬛⬛⬛⬛ \n⬛🔵🔵⬛ \n⬛🔵🔵⬛ \n⬛⬛⬛⬛`")
+            await ups.edit("`E \nA \nN \nI`")
             await asyncio.sleep(1)
-            await ups.edit("`⬛⬛⬛⬛ \n⬛❇️❇️⬛ \n⬛❇️❇️⬛ \n⬛⬛⬛⬛`")
+            await ups.edit("`A \nN \nI \nE`")
             await asyncio.sleep(1)
-        await ups.edit("`⚜️Updating DarkCobra⚜️\n\nYou are the 👑KING👑 Boss!!\n\nPlease wait 5min😁😁\nThen try .alive to check` 😎😎\n\n**Powered by :-**\n©DARK_COBRA_SUPPORT ")
+        await ups.edit("`⚜️Updating Anje⚜️\n\nPloxx Weit!\n\nWeit 5 Mins😁\nThen try .alive to check` 😎\n")
         remote.push(refspec="HEAD:refs/heads/master", force=True)
     else:
         try:
@@ -162,12 +159,3 @@ async def upstream(ups):
         args = [sys.executable, "-m", "userbot"]
         execle(sys.executable, *args, environ)
         return
-    
-
-CMD_HELP.update({
-    'updater':
-    ".update\
-\nUsage: Checks if the main userbot repository has any updates and shows a changelog if so.\
-\n\n.update now\
-\nUsage: Updates your userbot, if there are any updates in the main userbot repository."
-})
